@@ -1,0 +1,12 @@
+import inspect
+'''To list all of the methods in a module'''
+
+# Input: name of the module you want to see methods for
+a = input("What do you want to see: ")
+z = 0
+
+x = inspect.getmembers(eval(a), inspect.isfunction)
+
+for word in x:
+    z += 1
+    print(z, word[0])
